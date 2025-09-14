@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ritik Kumar - Video Editor Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">Ritik Kumar</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#gallery" class="nav-link">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="nav-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Hello, I'm <span class="highlight">Ritik Kumar</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        Professional Video Editor | Motion Graphics Designer | Creative Storyteller
+                    </p>
+                    <p class="hero-description">
+                        Passionate about bringing stories to life through compelling video content, 
+                        cinematic visuals, and engaging motion graphics that captivate audiences.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#about" class="btn btn-primary">Learn More</a>
+                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-video"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <a href="#about">
+                    <i class="fas fa-chevron-down"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Get to know more about my journey and expertise</p>
+            </div>
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-film"></i>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h3>Creative Video Editor & Motion Designer</h3>
+                    <p>
+                        I'm a passionate video editor with expertise in creating compelling visual narratives.
+                        My journey in video production spans across commercial projects, social media content, 
+                        and cinematic storytelling, always with a focus on high-quality editing and engaging visuals.
+                    </p>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <i class="fas fa-cut"></i>
+                            <h4>Video Editing</h4>
+                            <p>Adobe Premiere Pro, Final Cut Pro, DaVinci Resolve</p>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-magic"></i>
+                            <h4>Motion Graphics</h4>
+                            <p>After Effects, Cinema 4D, Blender</p>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-palette"></i>
+                            <h4>Color Grading</h4>
+                            <p>DaVinci Resolve, Lumetri Color, Magic Bullet</p>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-volume-up"></i>
+                            <h4>Audio Production</h4>
+                            <p>Audition, Pro Tools, Logic Pro</p>
+                        </div>
+                    </div>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <h4>100+</h4>
+                            <p>Videos Edited</p>
+                        </div>
+                        <div class="stat-item">
+                            <h4>5+</h4>
+                            <p>Years Experience</p>
+                        </div>
+                        <div class="stat-item">
+                            <h4>50+</h4>
+                            <p>Happy Clients</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Media Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Media Gallery</h2>
+                <p class="section-subtitle">Showcase of my recent work and projects</p>
+            </div>
+            <div class="gallery-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="video">Videos</button>
+                <button class="filter-btn" data-filter="motion">Motion Graphics</button>
+                <button class="filter-btn" data-filter="commercial">Commercial</button>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item" data-category="video" data-type="video">
+                    <div class="gallery-image">
+                        <div class="video-placeholder">
+                            <i class="fas fa-play-circle"></i>
+                            <div class="video-duration">2:45</div>
+                        </div>
+                        <div class="gallery-overlay">
+                            <h4>Corporate Promo Video</h4>
+                            <p>Professional company introduction with motion graphics</p>
+                            <div class="gallery-buttons">
+                                <button class="gallery-btn" onclick="openVideoLightbox(0)">
+                                    <i class="fas fa-play"></i>
+                                </button>
+                                <a href="#" class="gallery-btn">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="motion" data-type="video">
+                    <div class="gallery-image">
+                        <div class="video-placeholder">
+                            <i class="fas fa-play-circle"></i>
+                            <div class="video-duration">1:30</div>
+                        </div>
+                        <div class="gallery-overlay">
+                            <h4>Logo Animation</h4>
+                            <p>Dynamic 3D logo reveal with particle effects</p>
+                            <div class="gallery-buttons">
+                                <button class="gallery-btn" onclick="openVideoLightbox(1)">
+                                    <i class="fas fa-play"></i>
+                                </button>
+                                <a href="#" class="gallery-btn">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="commercial" data-type="video">
+                    <div class="gallery-image">
+                        <div class="video-placeholder">
+                            <i class="fas fa-play-circle"></i>
+                            <div class="video-duration">0:45</div>
+                        </div>
+                        <div class="gallery-overlay">
+                            <h4>Product Advertisement</h4>
+                            <p>High-impact commercial with color grading and effects</p>
+                            <div class="gallery-buttons">
+                                <button class="gallery-btn" onclick="openVideoLightbox(2)">
+                                    <i class="fas fa-play"></i>
+                                </button>
+                                <a href="#" class="gallery-btn">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="video" data-type="video">
+                    <div class="gallery-image">
+                        <div class="video-placeholder">
+                            <i class="fas fa-play-circle"></i>
+                            <div class="video-duration">3:20</div>
+                        </div>
+                        <div class="gallery-overlay">
+                            <h4>Documentary Edit</h4>
+                            <p>Cinematic storytelling with advanced color correction</p>
+                            <div class="gallery-buttons">
+                                <button class="gallery-btn" onclick="openVideoLightbox(3)">
+                                    <i class="fas fa-play"></i>
+                                </button>
+                                <a href="#" class="gallery-btn">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="motion" data-type="video">
+                    <div class="gallery-image">
+                        <div class="video-placeholder">
+                            <i class="fas fa-play-circle"></i>
+                            <div class="video-duration">2:10</div>
+                        </div>
+                        <div class="gallery-overlay">
+                            <h4>Social Media Intro</h4>
+                            <p>Engaging animated introduction for YouTube channel</p>
+                            <div class="gallery-buttons">
+                                <button class="gallery-btn" onclick="openVideoLightbox(4)">
+                                    <i class="fas fa-play"></i>
+                                </button>
+                                <a href="#" class="gallery-btn">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="commercial" data-type="video">
+                    <div class="gallery-image">
+                        <div class="video-placeholder">
+                            <i class="fas fa-play-circle"></i>
+                            <div class="video-duration">1:15</div>
+                        </div>
+                        <div class="gallery-overlay">
+                            <h4>Event Highlight Reel</h4>
+                            <p>Dynamic event coverage with multi-camera editing</p>
+                            <div class="gallery-buttons">
+                                <button class="gallery-btn" onclick="openVideoLightbox(5)">
+                                    <i class="fas fa-play"></i>
+                                </button>
+                                <a href="#" class="gallery-btn">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Let's discuss your next project or opportunity</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Connect</h3>
+                    <p>
+                        I'm always open to discussing new opportunities, interesting projects,
+                        or just having a friendly chat about technology and design.
+                    </p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>ritikkumar@example.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>+91 98765 43210</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Mumbai, India</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-behance"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" rows="6" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2024 Ritik Kumar. All rights reserved.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#gallery">Gallery</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <div class="lightbox-content">
+            <span class="lightbox-close">&times;</span>
+            <div class="lightbox-media">
+                <div class="video-player">
+                    <video controls poster="">
+                        <source src="" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="image-placeholder" style="display: none;">
+                    <i class="fas fa-image"></i>
+                </div>
+            </div>
+            <div class="lightbox-caption">
+                <h3></h3>
+                <p></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
